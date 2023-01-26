@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+body{
+  overflow-x: hidden;
+}
+p{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+.header-all{
+  background-color: #17171B;
+  padding: 53px 0 ;
+}
+.header-all *{
+  color: #FFFFFF!important;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+#btn-1{
+  background-color: transparent;
+  color: #00FB43!important;
+  border-color: #00FB43;
+  padding: 10px;
+  margin-left: 10px;
+  transition: .6s;
+}
+#btn-1:hover{
+  background-color: #00FB43;
+  color: #17171B!important;
+  border-color: #00FB43;
+}
+#btn-2{
+  background-color: #00FB43;
+  color: #17171B!important;
+  border-color: #00FB43;
+  padding: 10px 37px;
+  margin-left: 10px;
+  transition: .6s;
+}
+.header-all  a{
+  margin-right: 30px;
+  transition: .6s;
+}
+.header-all  a:hover{
+  color: #00FB43!important;
+}
+#active { 
+  color: #00FB43!important;
+}
+.kurs-all{
+  background-color: #17171B;
+  color: #fff;
+  padding: 7rem 0 6rem; 
+  background-image: url("assets/bg1.png");
+  background-size: cover;
+  background-position: center;
+}
+.kurs-top h1{
+  font-family: 'Russo One', sans-serif;
+  font-size: 48px;
+  line-height: 58px;
+  width: 60%;
+}
+.kurs-top h1 span{
+  font-family: 'Russo One', sans-serif;
+  color: #00FB43;
+}
+.kurs-top p{
+  color: #ECECEC;
+  margin: 18px 0 32px;
+  width: 44%;
+}
+.kurs-bottom {
+  width: 30%;
+}
+.platform-all{
+   padding: 8rem 0 6rem;
+   background-color: #ECECEC;
+}
+.plt-left h2{
+  font-family: 'Russo One';
+  font-size: 48px;
+  line-height: 58px;
+  margin-top: 5rem;
+}
+.plt-left p{
+  padding: 22px 0;
+}
+.plt-right .box{
+  margin-bottom: 4.5rem;
+}
+.plt-right p{
+  width: 90%;
+}
+.training-all{
+  background-color: #17171B;
+  color: #fff;
+}
+.tr-top{
+  padding: 60px 0;
+  border-bottom: 1px solid #ECECEC;
+}
+.tr-top h2{
+  font-family: 'Russo One';
+  font-size: 48px;
+  line-height: 58px;
+  color: #ECECEC;
+}
+.tr-bottom{
+  padding: 50px 0;
+}
+.tr-bottom .tr-card{
+  background: #23222B;
+  border-radius: 10px;
+  padding: 54px 42px;
+  height: 400px;
+}
+.tr-card .card-bottom h4{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #00E637;
+  margin: 15px 0;
+}
+.tr-card .card-bottom p{
+  color: #ECECEC;
+  width: 90%;
+}
+.program-all{
+  padding: 8rem 0 10rem;
+}
+.program-all .pr-top{
+  position: relative;
+}
+.pr-top .line{
+  height: 1px;
+  background-color: #121219;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 66%;
+  margin-right: -100px;
+}
+.program-all .pr-top h2{
+  font-family: 'Russo One';
+  font-size: 48px;
+  line-height: 58px;
+  color: #12121A;
+}
+.program-all .pr-top p{
+  width: 35%;
+  margin: 16px 0 28px;
+}
+ .pr-bottom .pr-box{
+  border-radius: 10px;
+  background-color: #17171B;
+  height: 210px;
+}
+.pr-bottom .pr-box h4{
+  color: #00E637;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+}
+.pr-bottom .pr-box p{
+  color: #ECECEC;
+  width: 100%;
+}
+.pr-box .pr-box-left{
+  background-color: #02CD31;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(110% 0%, 85% 50%, 110% 100%, 0 100%, 0% 50%, 0 0);
+  border-radius: 0 15px 15px 0;
+  height: 100%;
+}
+@media (max-width:1200px){
+  .kurs-bottom, .kurs-top p, .kurs-top h1{
+    width: 100%;
+  }
+  .kurs-bottom button{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width:992px ){
+  .platform-all{
+    background-color: #fff;
+ }
+  .plt-left #btn-2{
+    display: none;
+  }
+  .plt-right .box{
+    background-color: #ECECEC;
+    padding: 20px;
+  }
+  .plt-right p{
+    margin: 16px 0;
+  }
+  .plt-right .box-left{
+    text-align: center;
+  }
+  .pr-bottom .pr-box p, .program-all .pr-top p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .line{
+    display: none;
+  }
+}
